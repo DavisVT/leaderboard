@@ -1,7 +1,7 @@
 function Header() {
     return(
-        <div>
-            <button>SignUp</button>
+        <div className="signup-container">
+            <button className="signupbtn">SignUp</button>
         </div>
     );
 }

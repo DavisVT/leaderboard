@@ -4,38 +4,38 @@ function Logincard() {
      <div className="container">
          <div className="mainbody">
             <div className="title">
-            <h5>Welcome to Leaderboard</h5>
-          </div>
-          <div className="togglebtn">
-            <button>User</button>
-            <button>Admin</button>
-          </div>
-          <div>
+              <h5 className="title-text">Welcome to Leaderboard</h5>
+            </div>
+            <div className="toggle-container">
+              <input type="checkbox" id="toggle" />
+              <label htmlFor="toggle" className="toggle-label">
+                <span className="option user">User</span>
+                <span className="option admin">Admin</span>
+                <div className="slider"></div>
+              </label>
+            </div>
             <p className="subtitle">Hey👋, this is Amrah. If you already have an account login here</p>
+            <div className="inputgroup">
+              <h5 className="inputlabel">Username</h5>
+              <input type="text" placeholder="Enter your Username" className="inputfield"/>
+            </div>
+            <div className="inputgroup">
+              <h5 className="inputlabel">Password</h5>
+              <input type="text" placeholder="Enter your Password" className="inputfield"/>
+            </div>
+            <div className="remember-forgot">
+              <div>
+                <input type="checkbox" />
+                <span>Remember Me</span>
+              </div>
+              <div>
+                <span>Forgot Password?</span>
+              </div>
+            </div>
+            <div className="loginbtn-container">
+              <button className="loginbtn">Login</button>
+            </div>
           </div>
-          <div className="usernameinput">
-            <h5 className="usertext">Username</h5>
-            <input type="text"
-            placeholder="Enter your Username"
-            className="userinputfield"
-            />
-          </div>
-          <div className="passwordinput">
-            <h5>Password</h5>
-            <input type="text"
-            placeholder="Enter your Password"
-            />
-          </div>
-          <div>
-            <input type="checkbox" />
-            <span>Remember Me</span>
-            <span>Forgot Password?</span>
-          </div>
-          <div>
-            <span>Forgot Password?</span>
-          </div>
-          <button>Login</button>
-        </div>
      </div>
         </>
     );
