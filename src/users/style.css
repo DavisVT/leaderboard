@@ -1,0 +1,163 @@
+body {
+  display: grid;
+  justify-items: center;
+}
+.signup-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #3F79AB;
+}
+.signupbtn {
+  width: 117px;
+  height: 44px;
+  color: #3F79AB;
+  padding: 6px 0;
+  border: 1.5px solid #3F79AB;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  text-align: center;
+}
+
+.container {
+  width: 406px;
+  border: 1.5px solid #2a7fd4;
+  border-radius: 15px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.title-text {
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #727272;
+}
+
+.inputgroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.inputlabel {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0 5px 0;
+  text-align: left;
+}
+.inputfield {
+  height: 40px;
+  width: 100%;
+  border: 1.5px solid;
+  border-radius: 40px;
+  padding: 10px 14px;
+  box-sizing: border-box;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#toggle {
+  display: none;
+}
+.toggle-label {
+  width: 270px;
+  height: 40px;
+  background: #ECF3F9;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 10px 5px;
+}
+.option {
+  width: 50%;
+  text-align: center;
+  z-index: 2;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.user { color: #fff; }
+.admin { color: #AF9F88; }
+.slider {
+  position: absolute;
+  width: 130px;
+  height: 36px;
+  background: #3F79AB;
+  border-radius: 10px;
+  left: 5px;
+  transition: transform 0.3s ease;
+}
+#toggle:checked + .toggle-label .slider { transform: translateX(130px); }
+#toggle:checked + .toggle-label .user { color: #94a3b8; }
+#toggle:checked + .toggle-label .admin { color: #fff; }
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.remember-forgot input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.loginbtn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.loginbtn {
+  width: 179px;
+  padding: 6px 68px;
+  background-color: #3F79AB;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.signupbtn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.signupbtn-main {
+  width: 179px;
+  padding: 6px 20px;
+  background-color: #3F79AB;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}

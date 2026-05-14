@@ -1,10 +1,18 @@
-function Logincard() {
+import { useNavigate } from 'react-router-dom'
+import './style.css'
+
+function Login() {
+    const navigate = useNavigate()
+
     return(
         <>
+        <div className="signup-container">
+            <button className="signupbtn" onClick={() => navigate('/admin/signup')}>SignUp</button>
+        </div>
      <div className="container">
          <div className="mainbody">
             <div className="title">
-              <h5 className="title-text">Welcome to Leaderboard</h5>
+              <h5 className="title-text">Welcome Admin!</h5>
             </div>
             <div className="toggle-container">
               <input type="checkbox" id="toggle" />
@@ -14,7 +22,7 @@ function Logincard() {
                 <div className="slider"></div>
               </label>
             </div>
-            <p className="subtitle">Hey👋, this is Amrah. If you already have an account login here</p>
+            <p className="subtitle">Hey👋, this is Amrah. This is the admin login page, if you are an admin please login here</p>
             <div className="inputgroup">
               <h5 className="inputlabel">Username</h5>
               <input type="text" placeholder="Enter your Username" className="inputfield"/>
@@ -40,4 +48,4 @@ function Logincard() {
         </>
     );
 }
-export default Logincard
+export default Login

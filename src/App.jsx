@@ -1,15 +1,24 @@
-import Header from "./Header.jsx";
-import Logincard from "./Logincard.jsx";
-import './style.css'
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Logincard from './users/Logincard'
+import Signupcard from './users/Signupcard'
+import AdminLogin from './admin/Login'
+import AdminSignup from './admin/Signup'
+import './users/style.css'
+import Home from './Home'
+import './index.css'
 
 function App() {
-  return(
-    <>
-      <Header/>
-      <Logincard/>
-    </>
-  );
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Logincard />} />
+        <Route path="/signup" element={<Signupcard />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin/signup" element={<AdminSignup />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App

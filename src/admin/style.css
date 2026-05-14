@@ -104,14 +104,14 @@ body {
 .admin { color: #AF9F88; }
 .slider {
   position: absolute;
-  width: 120px;
-  height: 30px;
+  width: 130px;
+  height: 36px;
   background: #3F79AB;
   border-radius: 10px;
-  left: 20px;
+  left: 5px;
   transition: transform 0.3s ease;
 }
-#toggle:checked + .toggle-label .slider { transform: translateX(120px); }
+#toggle:checked + .toggle-label .slider { transform: translateX(130px); }
 #toggle:checked + .toggle-label .user { color: #94a3b8; }
 #toggle:checked + .toggle-label .admin { color: #fff; }
 
@@ -138,6 +138,24 @@ body {
   color: white;
   border: none;
   border-radius: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.signupbtn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.signupbtn-main {
+  width: 179px;
+  padding: 6px 20px;
+  background-color: #3F79AB;
+  color: white;
+  border: none;
+  border-radius: 10px;
   font-size: 16px;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
