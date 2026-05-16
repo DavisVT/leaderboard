@@ -41,7 +41,7 @@ function Logincard() {
               </div>
             </div>
             <div className="loginbtn-container">
-              <button className="loginbtn">Login</button>
+              <button className="loginbtn" onClick={() => navigate('/dashboard')}>Login</button>
             </div>
           </div>
      </div>
